@@ -15,7 +15,8 @@ Error() {
   fluxbox; Error "fluxbox"
 ) &
 
-su - app -c "chromedriver --whitelisted-ips --url-base=wd/hub --verbose --port=$PORT" &
+#su - app -c "chromedriver --whitelisted-ips --url-base=wd/hub --verbose --port=$PORT" &
+chromedriver --whitelisted-ips --url-base=wd/hub --verbose --port=$PORT &
 wait $!
 
 Error "chromedriver"
