@@ -23,4 +23,8 @@ RUN groupadd -r app && useradd -r -g app -G audio,video app \
 WORKDIR /app
 COPY app .
 
+# kaniko pls
+# RUN chown -R app /app
+# USER app
+
 ENTRYPOINT [ "/app/entrypoint.sh" ]

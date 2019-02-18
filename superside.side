@@ -1,0 +1,78 @@
+{
+  "id": "29510bb7-a6df-49bf-83dc-f064dc8c0c21",
+  "version": "2.0",
+  "name": "superside",
+  "url": "https://www.planeetta.net",
+  "tests": [{
+    "id": "51efc4a4-ab30-48c9-a5a8-c4201bbd67b1",
+    "name": "planeetta",
+    "commands": [{
+      "id": "095fe656-8d43-4f28-946f-974ffbca7db1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9cdcda9-366a-4919-8437-e9374b8c5bb7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#main-nav .nav-item:nth-child(3) > .nav-link",
+      "targets": [
+        ["css=#main-nav .nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='main-nav']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/omatpalvelut')]", "xpath:href"],
+        ["xpath=//div[4]/div/nav/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f4ca36d-bc49-4aac-ab56-b0771284dc83",
+      "comment": "",
+      "command": "click",
+      "target": "css=#main-nav .nav-item:nth-child(4) > .nav-link",
+      "targets": [
+        ["css=#main-nav .nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='main-nav']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/asiakaspalvelu')])[2]", "xpath:href"],
+        ["xpath=//div[4]/div/nav/div/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4aaf3c0-b197-415f-8d13-a13bb7ff89dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#main-nav .nav-item:nth-child(5) > .nav-link",
+      "targets": [
+        ["css=#main-nav .nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Yritys')])[2]", "xpath:link"],
+        ["xpath=//div[@id='main-nav']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/yritys')])[4]", "xpath:href"],
+        ["xpath=//div[4]/div/nav/div/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e79ee922-3b09-42c8-b772-81cef76f8c80",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(6) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Blogi')]", "xpath:link"],
+        ["xpath=//div[@id='main-nav']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://blog.planeetta.net/')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6b16ddc5-8dab-4e86-bcf0-16f18be681bf",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["51efc4a4-ab30-48c9-a5a8-c4201bbd67b1"]
+  }],
+  "urls": ["https://www.planeetta.net/"],
+  "plugins": []
+}
